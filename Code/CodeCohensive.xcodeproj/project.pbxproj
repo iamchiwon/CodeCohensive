@@ -13,6 +13,10 @@
 		A13F6FE220F3B0D60041A286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13F6FE020F3B0D60041A286 /* Main.storyboard */; };
 		A13F6FE420F3B0D80041A286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13F6FE320F3B0D80041A286 /* Assets.xcassets */; };
 		A13F6FE720F3B0D80041A286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13F6FE520F3B0D80041A286 /* LaunchScreen.storyboard */; };
+		A1713E8120F5F0830057BC1D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1713E8020F5F0830057BC1D /* Functions.swift */; };
+		A1713E8320F5F0B60057BC1D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1713E8220F5F0B60057BC1D /* Model.swift */; };
+		A1713E8520F5F0E40057BC1D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1713E8420F5F0E40057BC1D /* ViewModel.swift */; };
+		A1713E8720F5F2C40057BC1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1713E8620F5F2C40057BC1D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A13F6FE320F3B0D80041A286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A13F6FE620F3B0D80041A286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A13F6FE820F3B0D80041A286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1713E8020F5F0830057BC1D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		A1713E8220F5F0B60057BC1D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A1713E8420F5F0E40057BC1D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A1713E8620F5F2C40057BC1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B15FA2DDCA12519CAEAD4B05 /* Pods-CodeCohensive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeCohensive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeCohensive/Pods-CodeCohensive.debug.xcconfig"; sourceTree = "<group>"; };
 		F210E5E75A2C57B855A8F1E3 /* Pods-CodeCohensive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeCohensive.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeCohensive/Pods-CodeCohensive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				A13F6FDC20F3B0D60041A286 /* AppDelegate.swift */,
+				A1713E8020F5F0830057BC1D /* Functions.swift */,
+				A1713E8620F5F2C40057BC1D /* Extensions.swift */,
+				A1713E8220F5F0B60057BC1D /* Model.swift */,
+				A1713E8420F5F0E40057BC1D /* ViewModel.swift */,
 				A13F6FDE20F3B0D60041A286 /* ViewController.swift */,
 				A13F6FE020F3B0D60041A286 /* Main.storyboard */,
 				A13F6FE320F3B0D80041A286 /* Assets.xcassets */,
@@ -204,8 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1713E8520F5F0E40057BC1D /* ViewModel.swift in Sources */,
+				A1713E8720F5F2C40057BC1D /* Extensions.swift in Sources */,
 				A13F6FDF20F3B0D60041A286 /* ViewController.swift in Sources */,
 				A13F6FDD20F3B0D60041A286 /* AppDelegate.swift in Sources */,
+				A1713E8120F5F0830057BC1D /* Functions.swift in Sources */,
+				A1713E8320F5F0B60057BC1D /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +369,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V6C8BWW65M;
 				INFOPLIST_FILE = CodeCohensive/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamchiwon.app.CodeCohensive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -369,7 +388,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V6C8BWW65M;
 				INFOPLIST_FILE = CodeCohensive/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamchiwon.app.CodeCohensive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

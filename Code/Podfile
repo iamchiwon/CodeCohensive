@@ -8,6 +8,5 @@ target 'CodeCohensive' do
   # Pods for CodeCohensive
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxViewController'
 
 end
