@@ -14,14 +14,12 @@ class ViewModel {
     
     let model = BehaviorRelay<CalcData>(value: CalcData.empty())
     
-    func doCalc(sender: Any) {
-        let m = model.value
-        guard let n1 = m.n1 else { return }
-        guard let n2 = m.n2 else { return }
+    func doCalc(data: CalcData) -> CalcData {
+        guard let n1 = data.n1 else { return data }
+        guard let n2 = data.n2 else { return data }
         
         let result = n1 + n2
-        let r = CalcData(n1: m.n1, n2: m.n2, result: result)
-        model.accept(r)
+        return CalcData(n1: n1, n2: n2, result: result)
     }
     
 }

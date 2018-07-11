@@ -29,19 +29,17 @@ class ViewController: UIViewController {
     func bindUI() {
         //n1 input
         n1Field.rx.text.map(s2i)
-            .withLatestFrom(viewModel.model,
-                            resultSelector: { (n1, dat) -> CalcData in
-                                CalcData(n1: n1, n2: dat.n2, result: dat.result)
-                            })
+            .withLatestFrom(viewModel.model) { (n1, dat) in
+                CalcData(n1: n1, n2: dat.n2, result: dat.result)
+            }
             .bind(to: viewModel.model)
             .disposed(by: disposeBag)
 
         //n2 input
         n2Field.rx.text.map(s2i)
-            .withLatestFrom(viewModel.model,
-                            resultSelector: { (n2, dat) -> CalcData in
-                                CalcData(n1: dat.n1, n2: n2, result: dat.result)
-                            })
+            .withLatestFrom(viewModel.model) { (n2, dat) in
+                CalcData(n1: dat.n1, n2: n2, result: dat.result)
+            }
             .bind(to: viewModel.model)
             .disposed(by: disposeBag)
 
@@ -55,7 +53,9 @@ class ViewController: UIViewController {
     func bindEvent() {
         //event
         calcButton.rx.tap
-            .subscribe(onNext: viewModel.doCalc)
+            .withLatestFrom(viewModel.model)
+            .map(viewModel.doCalc)
+            .bind(to: viewModel.model)
             .disposed(by: disposeBag)
 
         //keyboard dismiss
