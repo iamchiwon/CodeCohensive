@@ -6,8 +6,11 @@
 
 #### Contents
 
-* RxSwift/RxCocoa 사용 예제
-* MVVM 간단 형태 예제
+* RxSwift/RxCocoa
+* MVVM Architecture
+* Functional Programming
+* Reactive Programming
+* Declarative Programming
 
 #### Keynote
 
