@@ -14,7 +14,7 @@
 
 #### Keynote
 
-[SlideShare](https://www.slideshare.net/ChiwonSong/20180721-code-defragment)
+[SlideShare](https://www.slideshare.net/ChiwonSong/20180721-code-defragment-106434267)
 
 #### Video
 
