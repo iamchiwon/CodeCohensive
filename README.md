@@ -4,7 +4,7 @@
 
 [let us: Go! 2018 summer](https://iosdevkor.github.io/let_us_go_2018_summer/)
 
-#### Contents
+### Contents
 
 * RxSwift/RxCocoa
 * MVVM Architecture
@@ -12,15 +12,15 @@
 * Reactive Programming
 * Declarative Programming
 
-#### Keynote
+### Keynote
 
 [SlideShare](https://www.slideshare.net/ChiwonSong/20180721-code-defragment-106434267)
 
-#### Video
+### Video
 
 (TBD)
 
-#### Product Level Example
+### Product Level Example
 
 ![icon](https://raw.githubusercontent.com/iamchiwon/remotimer/master/doc_res/icon.png)<br/>
 [REMOTIMER](https://github.com/iamchiwon/remotimer)<br/>
