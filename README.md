@@ -16,9 +16,9 @@
 
 [SlideShare](https://www.slideshare.net/ChiwonSong/20180721-code-defragment-106434267)
 
-### Video
+### Speaker Notes
 
-(TBD)
+[Blog Post](https://iamchiwon.github.io/2018/07/21/code-defragment/)
 
 ### Product Level Example
 
